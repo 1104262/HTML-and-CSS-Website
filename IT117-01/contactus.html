@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=�UTF-8�>
+<title>DeepCrust Pizzeria--Contact Us</title>
+
+<link rel="stylesheet" href="styles.css">
+<style>
+h1 {text-align: center;
+    color: orangered;
+    font-family: "Lucida handwriting", monospace;
+}
+</style>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: blue;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+<style> 
+input[type=text] {
+  width: 300px;
+  box-sizing: border-box;
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: indigo;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+ input[type=submit] {
+  background-color:Indigo;
+  border-radius: 20px
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header><img src="images/logo.jpg"alt="This is our resturant logo made by pros" width="200"height="200"></header>
+<h1>Fill out this form and we will respond to your request as soon as possible</h1>
+
+
+<nav>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="aboutus.html" title="our background story">About Us</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="chef.html">Chef</a></li>
+<li><a href="arcade.html">Arcade</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>Help us improve by giving us feedback</h2>
+<form action=""   method="post" autocomplete="on">                               
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+  <label for="eaddress">Email address:</label><br>
+  <input type="text" id="eaddress" name="email" placeholder="example@gmail.com" required><br><br>
+  <label for="pnumber">Phone number:</label><br>
+  <input type="text" id="pnumber" number="pnumber" placeholder="000-000-0000"><br><br>
+    <p>Please select your favourite beer:</p>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> root beer</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> little root beer</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> big root beer</label><br><br>
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  <p>Please select your New England state:</p>
+  <label for="cars">Choose a State:</label>
+  <select id="cars" name="cars">
+  <option value="Massachusetts"selected>Massachusetts</option>
+  <option value="Connecticut">Connecticut</option>
+  <option value="Maine">Maine</option>
+  <option value="New Hampshire">New Hampshire</option>
+  <option value="Rhode Island">Rhode Island</option>
+  <option value="Vermont">Vermont</option>
+  </select>
+ 
+  <h3>Enter your four-digit passcode, then click OK</h3>
+  <input ud="id1" type="number" min="1000" max"9999">
+  <button onclick="myFunction()">OK</button>
+  <p id="passcode"></p>
+  <script>
+function myFunction() {
+var inpObj=document.getElementByld("id1");
+if(inpObj.checkValidity()==false) {
+document.getElementByld("passcode").innerHTML = 
+inpObj.validationMessage;
+}else{ 
+document.getElementByld("passcode").innerHTML = "Passcode Valid";
+}
+}
+</script>
+</form> 
+<p> The text field will test that the passcode entered contains numeric digits only and that the passcode is four digits long and that it must contain digits greater then 1000. </p>
+<input type="submit" value="Submit">
+</main>
+<footer></footer>
+</body>
+</html>
+

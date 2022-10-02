@@ -1,0 +1,111 @@
+@charset"utf-8";
+
+body{
+background-image: url("images/home.jpg")
+background-color: lightblue;
+font-family:Times;
+color: black;
+}
+body {
+background: url(https://ist2w.purdueglobal.edu/htcomnet/Handlers/Download.ashx?file=Home%20drive%2FIT117-01%2Fimages%2Fhome.jpg&action=download) no-repeat center center fixed;
+-webkit background-size: cover;
+-moz background-size: cover;
+-o background-size cover;
+background-size: cover;
+}
+
+
+Header{
+
+background-color: black;
+color: blue;
+text-align: center;
+padding: 5px;
+width: 80%;
+margin-left: 10%
+}
+
+#container {
+width: 100%;
+}
+
+main{
+width: 80%;
+background-color: grey;
+float: left;
+padding: 5px;
+margin-left: 10%;
+}
+footer{
+clear: both;
+background-color: ;
+color: black;
+text-align: center;
+margin-left: 10%;
+padding: 5px;
+font-size: 12pt;
+width: 80;
+}
+nav{
+color: purple;
+padding: 5px;
+width: 80%;
+margin-left: 10%;
+font-weight: bold;
+}
+nav ul{
+list-style: none;
+}
+nav ul li{
+float:left;
+padding: 5px;
+}
+nav ul li a:link, nav ul li a:visited{
+deisplay: block;
+width: 150px;
+margin-right: 4px;
+color: white;
+padding: 2px 4px 2px 4px;
+background-color: black;
+text-decoration: none;
+}
+nav ul li a hover{
+color:pink;
+background-color: grey;
+}
+
+#customers {
+  font-family: Times, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 5px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: blue;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: Purple;
+  color:black;
+  font-weight: bold;
+}
+
+.restaurant { 
+  background: tomato;
+  text-align: center;
+  font-weight: bold;
+}
+
+.meat {
+ text-align: center;
+ font-weight: bold;
+}
+
